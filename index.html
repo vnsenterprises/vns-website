@@ -3,47 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <title>VNS Enterprises</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #1e3799, #4a69bd);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #0a3d62;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #1e3799;
+    }
+
+    .contact {
+      text-align: center;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #0a3d62;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
   <h1>VNS Enterprises</h1>
-  <p>Trusted Business & Services</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
-</nav>
+<div class="hero">
+  <h2>Trusted Business & Services</h2>
+  <p>Professional • Reliable • Customer Focused</p>
+</div>
 
 <section id="about">
   <h2>About Us</h2>
-  <p>
-    VNS Enterprises is committed to delivering quality services
-    with trust, professionalism, and customer satisfaction.
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    VNS Enterprises is committed to delivering quality services with trust,
+    professionalism, and complete customer satisfaction.  
+    We believe in long-term relationships and reliable business solutions.
   </p>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
-  <ul>
-    <li>Business Services</li>
-    <li>Consulting</li>
-    <li>Customer Support</li>
-  </ul>
+  <div class="services">
+    <div class="card">
+      <h3>Business Services</h3>
+      <p>Complete support for business operations and growth.</p>
+    </div>
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Expert guidance to improve efficiency and decision-making.</p>
+    </div>
+    <div class="card">
+      <h3>Customer Support</h3>
+      <p>Reliable and responsive support for your clients.</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>Email: vns.enterprises90@gmail.com</p>
-  <p>Phone: +91-7759014684</p>
+  <div class="contact">
+    <p><strong>Email:</strong> vns.enterprises90@gmail.com</p>
+    <p><strong>Phone:</strong> +91-7759014684</p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 VNS Enterprises. All rights reserved.</p>
+  © 2026 VNS Enterprises. All rights reserved.
 </footer>
 
 </body>
-  
+</html>
