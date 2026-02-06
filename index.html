@@ -1,171 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>VNS Enterprises</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-    }
-
-    header {
-      background: #0a3d62;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #1e3799, #4a69bd);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-    }
-
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      color: #0a3d62;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .card h3 {
-      color: #1e3799;
-    }
-
-    .contact {
-      text-align: center;
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 40px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background: #0a3d62;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>About & Services | VNS Enterprises</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        h2 {
+            text-align: center;
+            color: #0b3c5d;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 20px;
+        }
+        .section {
+            background: #fff;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+        }
+        .services, .why-us {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .box h3 {
+            color: #0b3c5d;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px 0;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-  <h1>VNS Enterprises</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<div class="container">
 
-<div class="hero">
-  <h2>Trusted Business & Services</h2>
-  <p>Professional • Reliable • Customer Focused</p>
+    <!-- About Us -->
+    <div class="section">
+        <h2>About Us</h2>
+        <p>
+            <strong>VNS Enterprises</strong> is a professional service firm specializing in customer support
+            and structured collection solutions. We work with customers (CM) to guide them in the
+            <strong>right and ethical way</strong>, helping them resolve <strong>loan overdue issues</strong>
+            smoothly and responsibly.
+        </p>
+        <p>
+            Our approach is built on transparency, respect, and complete support. From understanding
+            overdue amounts to <strong>loan closure and settlement</strong>, we assist customers at every
+            step while following proper procedures and professional standards.
+        </p>
+        <p>
+            We focus on long-term solutions and clear communication to ensure a smooth and stress-free
+            resolution process.
+        </p>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="section">
+        <h2>Our Mission & Vision</h2>
+        <p><strong>Mission:</strong> To provide ethical, transparent, and customer-friendly collection support with complete professionalism.</p>
+        <p><strong>Vision:</strong> To become a trusted and reliable service partner for structured loan collection and resolution support.</p>
+    </div>
+
+    <!-- Services -->
+    <div class="section">
+        <h2>Our Services</h2>
+
+        <div class="services">
+            <div class="box">
+                <h3>Loan Collection Support</h3>
+                <p>
+                    Ethical and guideline-based assistance to help customers resolve loan overdue matters
+                    effectively and responsibly.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Customer Guidance (CM Support)</h3>
+                <p>
+                    Clear guidance to customers regarding repayment options, overdue handling,
+                    and the correct resolution process.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Overdue & Loan Closure Assistance</h3>
+                <p>
+                    Complete support for overdue settlement, EMI management, and proper loan
+                    closure documentation.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Follow-Up & Resolution Support</h3>
+                <p>
+                    Professional follow-ups and coordination to ensure smooth communication and
+                    timely case closure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="section">
+        <h2>Why Choose VNS Enterprises</h2>
+
+        <div class="why-us">
+            <div class="box">✔ Ethical & Transparent Process</div>
+            <div class="box">✔ Professional Communication</div>
+            <div class="box">✔ Complete Support till Loan Closure</div>
+            <div class="box">✔ Experienced Handling of Overdue Cases</div>
+            <div class="box">✔ Customer-First Approach</div>
+        </div>
+    </div>
+
 </div>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p style="text-align:center; max-width:800px; margin:auto;">
-    VNS Enterprises is committed to delivering quality services with trust,
-    professionalism, and complete customer satisfaction.  
-    We believe in long-term relationships and reliable business solutions.
-  </p>
-</section>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Business Services</h3>
-      <p>Complete support for business operations and growth.</p>
-    </div>
-    <div class="card">
-      <h3>Consulting</h3>
-      <p>Expert guidance to improve efficiency and decision-making.</p>
-    </div>
-    <div class="card">
-      <h3>Customer Support</h3>
-      <p>Reliable and responsive support for your clients.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <div class="contact">
-    <p><strong>Email:</strong> vns.enterprises90@gmail.com</p>
-    <p><strong>Phone:</strong> +91-7759014684</p>
-  </div>
-</section>
-
-<footer>
-  © 2026 VNS Enterprises. All rights reserved.
-</footer>
 
 </body>
 </html>
